@@ -1,3 +1,69 @@
-/Indoor Objects.v1i.voc
-/datasets
-/data.yaml
+# ============================================================
+#  .gitignore — ETS Elektronika Cerdas (Object Detection Indoor)
+#  Tujuan: dataset 433 MB, hasil training, dan model TIDAK ikut ke-push.
+# ============================================================
+
+# ---------- Dataset mentah & hasil konversi ----------
+_raw/
+datasets/
+data.yaml
+Indoor Objects.v1i.voc/
+Indoor Objects.v1i.voc
+Indoor Object*/
+/content/datasets/
+
+# ---------- Arsip ZIP dataset / hasil ----------
+*.zip
+*.7z
+*.tar
+*.tar.gz
+
+# ---------- Hasil training & evaluasi Ultralytics ----------
+runs/
+wandb/
+*.cache
+*.db
+
+# ---------- Bobot model (besar, hasil generate) ----------
+*.pt
+*.pth
+*.onnx
+*.engine
+*.torchscript
+MyYOLOModel.pt
+yolo11n.pt
+yolo12n.pt
+
+# ---------- Hasil inferensi / rekaman webcam ----------
+detection_result.jpg
+rekaman_*.mp4
+hasil_webcam/
+hasil_prediksi/
+Hasil_ETS_ObjectDetection.zip
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+.python-version
+
+# ---------- Notebook & Colab ----------
+*.ipynb_checkpoints/
+.colab/
+.config/
+
+# ---------- Editor / OS ----------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------- Log & file sementara ----------
+*.log
+tmp/
+temp/

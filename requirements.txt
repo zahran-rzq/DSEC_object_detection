@@ -1,0 +1,25 @@
+# ============================================================
+#  Kebutuhan paket — ETS Elektronika Cerdas (Object Detection Indoor)
+#  Install:  pip install -r requirements.txt
+# ============================================================
+
+# --- Framework utama sesuai materi kuliah (Slide 25-31) ---
+ultralytics>=8.3.0          # YOLOv11 / YOLOv12 (from ultralytics import YOLO)
+torch>=2.2.0               # backend PyTorch
+torchvision>=0.17.0
+
+# --- Pendukung pengolahan data & visualisasi (Slide 31-35) ---
+opencv-python>=4.9.0       # cv2.VideoCapture, cv2.VideoWriter, cv2.imwrite
+matplotlib>=3.8.0          # Class distribution, results.png viewer
+pandas>=2.1.0              # Tabel metrik evaluasi
+numpy>=1.26.0
+Pillow>=10.0.0
+PyYAML>=6.0                # baca/tulis data.yaml
+
+# --- Utilitas dataset ---
+requests>=2.31.0           # unduh ZIP Mendeley dengan progress bar
+
+# Catatan:
+#   * Di Google Colab, torch & torchvision sudah tersedia (jangan di-install ulang).
+#   * Untuk GPU NVIDIA, install torch sesuai versi CUDA laptop, mis.:
+#       pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
