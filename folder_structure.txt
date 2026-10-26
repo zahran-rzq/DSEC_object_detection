@@ -1,0 +1,5 @@
+D:\PROJ\PROG\KULIAH\DSEC\ETS
+└───Indoor Objects.v1i.voc
+    ├───test
+    ├───train
+    └───valid
