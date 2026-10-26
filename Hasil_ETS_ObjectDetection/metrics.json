@@ -1,0 +1,97 @@
+{
+  "nama": "Muhammad Zahran Razzaq",
+  "nrp": "5024xxxxxx",
+  "model_pretrained": "yolo12n.pt",
+  "kelas": [
+    "bin",
+    "chair",
+    "door",
+    "fire extinguisher",
+    "human",
+    "shelf",
+    "table"
+  ],
+  "jumlah_kelas": 7,
+  "epochs": 30,
+  "patience": 15,
+  "imgsz": 640,
+  "batch": 16,
+  "durasi_training_menit": 16.74,
+  "jumlah_gambar": {
+    "train": 2000,
+    "valid": 490,
+    "test": 245
+  },
+  "instance_per_kelas": {
+    "bin": 755,
+    "chair": 2209,
+    "door": 1820,
+    "fire extinguisher": 550,
+    "human": 1062,
+    "shelf": 278,
+    "table": 819
+  },
+  "validation": {
+    "P": 0.783,
+    "R": 0.7882,
+    "mAP50": 0.8306,
+    "mAP50-95": 0.5807
+  },
+  "test": {
+    "P": 0.8533,
+    "R": 0.7474,
+    "mAP50": 0.8374,
+    "mAP50-95": 0.5941
+  },
+  "per_kelas_test": [
+    {
+      "kelas": "bin",
+      "Precision": 0.9348,
+      "Recall": 0.8828,
+      "mAP50": 0.9498,
+      "mAP50-95": 0.6954
+    },
+    {
+      "kelas": "chair",
+      "Precision": 0.7604,
+      "Recall": 0.7321,
+      "mAP50": 0.7798,
+      "mAP50-95": 0.536
+    },
+    {
+      "kelas": "door",
+      "Precision": 0.8623,
+      "Recall": 0.9029,
+      "mAP50": 0.9359,
+      "mAP50-95": 0.6965
+    },
+    {
+      "kelas": "fire extinguisher",
+      "Precision": 0.8704,
+      "Recall": 0.6122,
+      "mAP50": 0.7895,
+      "mAP50-95": 0.5344
+    },
+    {
+      "kelas": "human",
+      "Precision": 0.9192,
+      "Recall": 0.548,
+      "mAP50": 0.7494,
+      "mAP50-95": 0.4408
+    },
+    {
+      "kelas": "shelf",
+      "Precision": 0.7254,
+      "Recall": 0.7926,
+      "mAP50": 0.8076,
+      "mAP50-95": 0.6134
+    },
+    {
+      "kelas": "table",
+      "Precision": 0.9009,
+      "Recall": 0.7612,
+      "mAP50": 0.8496,
+      "mAP50-95": 0.6424
+    }
+  ]
+}
