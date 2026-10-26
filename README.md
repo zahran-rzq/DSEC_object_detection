@@ -1,3 +1,47 @@
+## 📎 Hasil ETS
+
+Hasil lengkap ETS Object Detection dapat dilihat dan diunduh melalui tautan berikut:
+
+- **[Buka folder Hasil_ETS_ObjectDetection](./Hasil_ETS_ObjectDetection/)** — berisi model, metrik, grafik evaluasi, dan hasil inferensi.
+- **[Unduh Hasil_ETS_ObjectDetection.zip](./Hasil_ETS_ObjectDetection.zip)** — arsip lengkap hasil ETS.
+- **[Baca ringkasan hasil ETS](./Hasil_ETS_ObjectDetection/README_HASIL.txt)** — konfigurasi training dan metrik validasi/test.
+
+### 📊 Ringkasan Hasil
+
+Model `yolo12n.pt` dilatih selama 30 epoch pada 7 kelas objek indoor menggunakan
+`imgsz=640` dan `batch=16`.
+
+| Split | Precision | Recall | mAP50 | mAP50-95 |
+|---|---:|---:|---:|---:|
+| Validation | 0.7830 | 0.7882 | 0.8306 | 0.5807 |
+| Test | **0.8533** | 0.7474 | **0.8374** | **0.5941** |
+
+### 🖼️ Gambar Hasil
+
+#### Evaluasi Model
+
+| Kurva training | Confusion matrix |
+|---|---|
+| [![Kurva training](./Hasil_ETS_ObjectDetection/ETS_results/training_curves.png)](./Hasil_ETS_ObjectDetection/ETS_results/training_curves.png) | [![Confusion matrix](./Hasil_ETS_ObjectDetection/ETS_results/confusion_matrix_normalized.png)](./Hasil_ETS_ObjectDetection/ETS_results/confusion_matrix_normalized.png) |
+
+| mAP per kelas | Perbandingan label dan prediksi |
+|---|---|
+| [![mAP per kelas](./Hasil_ETS_ObjectDetection/map_per_class.png)](./Hasil_ETS_ObjectDetection/map_per_class.png) | [![Perbandingan label dan prediksi](./Hasil_ETS_ObjectDetection/ETS_results/perbandingan_labels_vs_pred.jpg)](./Hasil_ETS_ObjectDetection/ETS_results/perbandingan_labels_vs_pred.jpg) |
+
+| Perbandingan COCO dan custom |
+|---|
+| [![Perbandingan COCO dan custom](./Hasil_ETS_ObjectDetection/ETS_results/compare_coco_vs_custom.png)](./Hasil_ETS_ObjectDetection/ETS_results/compare_coco_vs_custom.png) |
+
+#### Contoh Inferensi
+
+[![Hasil deteksi objek](./Hasil_ETS_ObjectDetection/hasil_inferensi/detection_result.jpg)](./Hasil_ETS_ObjectDetection/hasil_inferensi/detection_result.jpg)
+
+Contoh tambahan hasil inferensi tersedia di folder
+[hasil_inferensi](./Hasil_ETS_ObjectDetection/hasil_inferensi/), sedangkan seluruh
+grafik evaluasi tersedia di folder [ETS_results](./Hasil_ETS_ObjectDetection/ETS_results/).
+
+---
+
 # 🎯 ETS Elektronika Cerdas — Object Detection Indoor (YOLO)
 
 **Transfer Learning Ultralytics YOLO pada dataset *Indoor Object Detection* (Mendeley)**
